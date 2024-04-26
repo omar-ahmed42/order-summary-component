@@ -87,6 +87,8 @@ body {
   font-size: 1rem;
   color: hsl(224, 23%, 55%);
   margin-bottom: 20px;
+
+  line-height: 1.5rem;
 }
 
 .order-details {
@@ -139,7 +141,7 @@ body {
   flex-direction: row;
 
   height: 100%;
-  
+
   align-items: center;
   justify-content: right;
 }
@@ -159,8 +161,8 @@ body {
 }
 
 .change-plan:hover {
-    cursor: pointer;
-    color: #8d86e2;
+  cursor: pointer;
+  color: #8d86e2;
 }
 
 .payment-btn {
@@ -185,8 +187,8 @@ body {
 }
 
 .payment-btn:hover {
-    cursor: pointer;
-    background-color: #766cf1;
+  cursor: pointer;
+  background-color: #766cf1;
 }
 
 .cancel-btn {
@@ -207,6 +209,23 @@ body {
 }
 
 .cancel-btn:hover {
-    color: hsl(223, 47%, 23%);
-    cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .background {
+    background-image: url('assets/images/pattern-background-mobile.svg');
+  }
+
+  .card {
+    width: 310px;
+    height: 550px;
+
+    overflow: auto;
+  }
+
+  .summary-description {
+    line-height: 1.5rem;
+  }
 }
